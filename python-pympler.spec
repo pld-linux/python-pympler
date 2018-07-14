@@ -19,9 +19,13 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.6
+%if %{with tests}
+BuildRequires:	idle
+%endif
 %endif
 %if %{with python3}
 BuildRequires:	python3-modules >= 1:3.2
+# no idlelib.TreeWidget in python 3.6+, functionality skipped
 %endif
 Requires:	python-modules >= 1:2.6
 BuildArch:	noarch
