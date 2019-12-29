@@ -7,13 +7,13 @@
 Summary:	Tool to measure, monitor and analyse the memory behaviour of Python 2 objects
 Summary(pl.UTF-8):	Narzędzie do pomiaru, monitorowania i analizy zachowania pamięciowego obiektów Pythona 2
 Name:		python-pympler
-Version:	0.6
-Release:	2
+Version:	0.8
+Release:	1
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pympler/
 Source0:	https://files.pythonhosted.org/packages/source/P/Pympler/Pympler-%{version}.tar.gz
-# Source0-md5:	4e63ffa40b28d3da4594d0442183a9b9
+# Source0-md5:	e925467e6c3a04c7720ecedc208c9861
 Patch0:		%{name}-tests.patch
 URL:		https://pythonhosted.org/Pympler/
 BuildRequires:	rpm-pythonprov
@@ -25,7 +25,7 @@ BuildRequires:	idle
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 1:3.3
+BuildRequires:	python3-modules >= 1:3.4
 # no idlelib.TreeWidget in python 3.6+, functionality skipped
 %endif
 Requires:	python-modules >= 1:2.7
@@ -45,7 +45,7 @@ aplikacji.
 Summary:	Tool to measure, monitor and analyse the memory behaviour of Python 3 objects
 Summary(pl.UTF-8):	Narzędzie do pomiaru, monitorowania i analizy zachowania pamięciowego obiektów Pythona 3
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.3
+Requires:	python3-modules >= 1:3.4
 
 %description -n python3-pympler
 Pympler is a development tool to measure, monitor and analyse the
