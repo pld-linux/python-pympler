@@ -8,7 +8,7 @@ Summary:	Tool to measure, monitor and analyse the memory behaviour of Python 2 o
 Summary(pl.UTF-8):	Narzędzie do pomiaru, monitorowania i analizy zachowania pamięciowego obiektów Pythona 2
 Name:		python-pympler
 Version:	0.9
-Release:	2
+Release:	3
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pympler/
